@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "whiterose",
+	"version": "${version}",
+	"name": "whiterose",
+	"description": "Core of the WhiteRoseClient",
+	"authors": [
+		"Larrox"
+	],
+	"contact": {
+		"homepage": "https://larrox.dev"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/whiterose/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"gg.whiterose.Whiterose"
+		],
+		"client": [
+			"gg.whiterose.WhiteroseClient"
+		]
+	},
+	"mixins": [
+		"whiterose.mixins.json",
+		{
+			"config": "whiterose.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

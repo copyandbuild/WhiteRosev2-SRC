@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "gg.whiterose.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ClientBrandRetrieverMxin",
+    "ExampleClientMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "MinecraftClientMixin"
+  ]
+}
